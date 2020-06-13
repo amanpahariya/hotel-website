@@ -1,0 +1,255 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'stylesheet/foothead.css' %}">
+<link rel="stylesheet" href="{% static'stylesheet/booking.css' }">
+<title>resort</title>
+</head>
+
+<body>
+  <nav class="navbar navbar1 navbar-expand-lg">
+      <a class="navbar-brand navbar1-brand1" href="#">The Maharaja Palace</a>
+      <button class="navbar-toggler button-toggler1 navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="fa fa-bars fabars "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                  <a class="nav-link nav1-link-item " href="home">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link nav1-link-item" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav1-link-item" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav4-link4-item" href="rooms">Book Now</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav1-link-item" href="#">Our Resort</a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+      <form action="cnfbooking" method="post">
+        {% csrf_token %}
+        <div class="part1">
+          <div class="your-info">
+              {% if message %}
+                        <p style=" color: red;">{{message}}</p>
+                        {% endif %}
+              {% if message1 %}
+                        <p style=" color: red;">{{message1}}</p>
+                        {% endif %}
+
+              <h2>CONTACT INFORMATION</h2>
+              <div class="booking">
+                      <select class="gender" name="prefix" placeholder="prefix">
+                          <option value="Select">Prefix</option>
+                          <option value="Dr.">Dr.</option>
+                          <option value="Mr.">Mr.</option>
+                          <option value="Miss">Miss.</option>
+                      </select>
+                    <div class="booking1">
+                      <input type="text" name="fname" placeholder="Enter your first name" >
+                    </div>
+                    <div class="booking2">
+                      <input type="text" name="lname" placeholder="Enter your last name" >
+                    </div>
+              </div>
+              <div class="booking booking-1">
+                    <div class="booking3">
+                        <input type="email" name="email" placeholder="Enter your email address">
+                    </div>
+                    <div class="booking2">
+                      <input type="text" name="cell" placeholder="Enter your cell">
+                    </div>
+            </div>
+          </div>
+          <div class="contact-info">
+            <h2>ADDRESS</h2>
+            <div class="booking3 booking6">
+                  <input type="text" name="country" placeholder="Country">
+            </div>
+            <div class="booking">
+              <div class="booking3 booking-1">
+                    <input type="text" name="add1" placeholder="Address1">
+              </div>
+              <div class="booking2 booking4">
+                    <input type="text" name="add2" placeholder="Address2">
+              </div>
+            </div>
+            <div class="booking">
+              <div class="booking3 booking5">
+                    <input type="text" name="city" placeholder="City">
+              </div>
+              <div class="booking2 booking5">
+                    <input type="text" name="zip" placeholder="Zip/postal Code">
+              </div>
+            </div>
+          </div>
+          <div class="payment">
+              <h2>PAYMENT INFORMATION</h1>
+              <div class="booking3 booking6">
+                        {% if message %}
+                        <p style=" color: red;">{{message}}</p>
+                        {% endif %}
+                      <input type="text" name="cardnumber" placeholder="Card number" maxlength="9" required>
+              </div>
+              <div class="booking">
+                <div class="booking4 booking7">
+                         <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+                         <div class="card-wrapper" style=" display:none;"></div>
+                </div>
+                <div class="booking4 booking7 booking8">
+                        <input type="text" name="cvv" placeholder="CVV" required maxlength="3">
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="policies">
+          <h2>POLICIES</h2>
+          <div class="booking">
+              <div class="">
+                <h4>Check-in</h4>
+              </div>
+              <div class="check">
+                <h4>Check-out</h4>
+              </div>
+          </div><br>
+          <div class="booking ">
+              <div class="">
+                <p>10:00 AM</p>
+              </div>
+              <div class="check1">
+                <p >10:00 AM</p>
+              </div>
+          </div>
+        </div>
+        <div class="part2" style=" position: relative; top: 20px; padding:50px; height:350px; ">
+              <h2>ACKNOWLEDGEMENT</h2>
+              <div class="booking">
+                <input type="radio" name="" value="">
+                <h3>Yes, I would like to receive newsletters and special offers by email.</h3>
+              </div>
+              <div class="booking">
+                <input type="radio" name="" value="" required>
+                <h3>*I agree with the Privacy Terms.</h3>
+              </div>
+              <div class="booking">
+                <input type="radio" name="" value="" required>
+                <h3>* I agree with the reservations policies and guest amenities fee.</h3>
+              </div>
+        </div>
+          <input type="hidden" name="check-in" value={{list.check1}}>
+          <input type="hidden" name="check-out" value={{list.check2}}>
+          <input type="hidden" name="total" value={{list.total}}>
+          <input type="hidden" name="mem" value={{list.mem}}>
+          <input type="hidden" name="rooms" value={{list.rooms}}>
+
+          <button type="submit" class="btn btn-primary button1">COMPLETE BOOKING  <i class="fa fa-lock" aria-hidden="true"></i></button>
+      </form>
+      <div class="billdesk">
+        <div class="check-in-out-policies">
+                <h2 style="margin-left: 20px;">YOUR STAY</h2>
+                <div class="check-in-out-policies-1">
+                  <div class="check-in">
+                    Check in
+                  </div>
+                  <div class="check-in check-in-1">
+                    Check out
+                  </div>
+                </div>
+                <div class="check-in-out-policies-1">
+                  <div class="check-in">
+                    10:00 AM
+                  </div>
+                  <div class="check-in check-in-1">
+                    10:00 AM
+                  </div>
+                </div>
+        </div>
+        <div class="check-in-out-policies">
+          <div class="check-in-out-policies-1 booking2">
+              <div class="price ">
+                <h3>Price</h3>
+              </div>
+              <div class=" price">
+                    <h3>Rooms</h3>
+              </div>
+              <div class=" price">
+                    <h3>Member</h3>
+              </div>
+          </div>
+            <div class="check-in-out-policies-1">
+                  <div class="price price-1">
+                      <h4>{{list.price}}</h4>
+                  </div>
+                  <div class="price price-1">
+                      <h4>{{list.rooms}}</h4>
+                  </div>
+                  <div class="price price-1">
+                      <h4>{{list.mem}}</h4>
+                  </div>
+            </div>
+            <div class="check-in-out-policies-1">
+                  <div class="price-1">
+                    <p>Gst<span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rs. 1800</p>
+                  </div>
+            </div><br>
+            <div class="check-in-out-policies-1">
+              <div class="check-in">
+                    <h4>Total<span>&nbsp;&nbsp;:</span> &nbsp;Rs. {{list.total}}</h4>
+              </div>
+            </div>
+            </div>
+            <div class="check-in-out-policies total-bill">
+                    <h2 style="margin-left: 20px;">YOUR DATE</h2>
+                    <div class="check-in-out-policies-1">
+                      <div class="check-in">
+                        Check in
+                      </div>
+                      <div class="check-in check-in-1">
+                        Check out
+                      </div>
+                    </div>
+                    <div class="check-in-out-policies-1">
+                      <div class="check-in" style=" font-size: 18px;">
+                        10:00 AM<br>
+                        {{list.check1}}
+                      </div>
+                      <div class="check-in check-in-1" style=" font-size: 18px;">
+                        10:00 AM<br>
+                        {{list.check2}}
+                      </div>
+                    </div>
+          </div>
+        </div>
+      <div class="details details1">
+          <div class="container-6 ">
+              <img src="../static/images/Monkey_Hut_Delivery-horz.jpg" class="image6 footer" alt="">
+          </div>
+          <div class="end footer1">
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <h2>The Maharaja Place</h2>
+            <h3>Address xxxxxxxxxxxxxxxxxxxxxxx</h3>
+            <h4>tel.</h4>
+            <h5>123456789</h5>
+            <a href="contact"><input type="button" name="" value="Contact"></a>
+            <h6><a href="#">xyz123@gmail.com</a></h6>
+            <h1><a href="#">SiteMaps</a></h1>
+            <p>© The Maharaja Place All Rights Reserved.</p>
+          </div>
+      </div>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.card.js"></script>
+<script type="text/javascript" src="../static/js/index.js"></script>
+</body>
+</html>

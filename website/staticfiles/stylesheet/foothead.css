@@ -1,0 +1,834 @@
+
+.navbar1
+{
+  background: transparent;
+  z-index: 9999;
+
+}
+
+.navbar1-brand1
+{
+  position: absolute;
+  top:10px;
+  right:40%;
+  font-family: Times;
+  font-size:35px;
+  color:black;
+}
+
+.nav1-link-item
+{
+  color:rgb(1,126,107) !important;
+  margin:20px;
+}
+.nav4-link4-item
+{
+  color: white !important;
+  background-color: rgb(1,126,107);
+  position: absolute;
+  top:25px;
+  right: 50px;
+  width: 100px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.navbar {
+ min-height: 80px;
+}
+
+.navbar1:hover
+{
+  background-color: white;
+}
+.navbar1:hover, h1.change
+{
+  color: black;
+}
+
+.button-toggler1
+{
+  margin:0;
+  padding:0px;
+  background: transparent;
+  border:none !important;
+  outline:none !important;
+
+}
+
+.image6
+{
+  position: absolute;
+  top: 2800px;
+  right: 0;
+  width:50%;
+  height: 400px;
+}
+
+.end
+{
+  position: absolute;
+  top:2800px;
+  left:0px;
+  width: 50%;
+  text-align: center;
+}
+
+.end i
+{
+  position: absolute;
+  top:100px;
+  left:40px;
+  font-size: 50px;
+  color: #BD8B28;
+}
+
+.end h2
+{
+  position: absolute;
+  top:110px;
+  left:150px;
+  font-size: 30px;
+  color:rgb(123,123,123);
+  font-family: Times;
+}
+
+.end h4
+{
+  position: absolute;
+  top:180px;
+  left:40px;
+  font-size: 30px;
+  font-family: Times;
+  color: rgb(123,123,123);
+}
+
+.end h3
+{
+  position: absolute;
+  top:150px;
+  left:50px;
+  font-size: 20px;
+  font-family: Times;
+  color: rgb(123,123,123);
+}
+
+.end h5
+{
+  position: absolute;
+  top:187px;
+  left:150px;
+  font-size: 20px;
+  color: rgb(123,123,123);
+  font-family: Times;
+}
+
+.end input
+{
+  border: none;
+  position: absolute;
+  top:187px;
+  left:350px;
+  font-size: 20px;
+  color: #fff;
+  font-family: Times;
+  background: #BD8B28;
+  padding:5px;
+  width: 130px;
+  height: 50px;
+  border:#BD8B28;
+
+}
+
+.end h6
+{
+  position: absolute;
+  top:250px;
+  left:100px;
+  font-size: 20px;
+  font-family: Times;
+  color: rgb(123,123,123);
+}
+
+.end h6 a
+{
+  color: rgb(123,123,123);
+}
+
+.end h1
+{
+  position: absolute;
+  top:300px;
+  left:100px;
+  font-size: 20px;
+  font-family: Times;
+}
+
+.end h1 a
+{
+  color: rgb(123,123,123);
+}
+
+.end p
+{
+  position: absolute;
+  top:350px;
+  left:100px;
+  font-size: 15px;
+  font-family: Times;
+  color: rgb(123,123,123);
+}
+
+@media (max-width:991px)
+{
+      .nav4-link4-item
+  {
+    position: absolute;
+    left: 13px;
+    top:205px;
+    margin:0;
+  }
+  .nav1-link-item
+  {
+    margin:0;
+  }
+  .navbar{
+    min-height: 60px;
+    background: white !important;
+  }
+  .navbar-nav {
+    height: 220px;
+  }
+  .navbar1-brand1{
+    font-size: 25px;
+    position: absolute;
+    right:20px;
+  }
+
+  .image6
+  {
+    position: absolute;
+    top: 2350px;
+    right: 0;
+    width:50%;
+    height: 400px;
+  }
+
+  .end
+  {
+    position: absolute;
+    top:2350px;
+    left:0px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .end i
+  {
+    position: absolute;
+    top:70px;
+    left:30px;
+    font-size: 45px;
+  }
+
+  .end h2
+  {
+    position: absolute;
+    top:80px;
+    left:140px;
+    font-size: 28px;
+  }
+
+  .end h4
+  {
+    position: absolute;
+    top:160px;
+    left:40px;
+    font-size: 30px;
+  }
+
+  .end h3
+  {
+    position: absolute;
+    top:130px;
+    left:50px;
+    font-size: 20px;
+  }
+
+  .end h5
+  {
+    position: absolute;
+    top:167px;
+    left:140px;
+    font-size: 20px;
+  }
+
+  .end input
+  {
+    border: none;
+    position: absolute;
+    top:167px;
+    left:300px;
+    font-size: 18px;
+    color: #fff;
+    font-family: Times;
+    padding:3px;
+    width: 110px;
+    height: 40px;
+  }
+
+  .end h6
+  {
+    position: absolute;
+    top:220px;
+    left:100px;
+    font-size: 20px;
+  }
+
+  .end h1
+  {
+    position: absolute;
+    top:280px;
+    left:80px;
+    font-size: 18px;
+    font-family: Times;
+  }
+  .end p
+  {
+    position: absolute;
+    top:320px;
+    left:80px;
+    font-size: 15px;
+  }
+
+}
+
+@media (max-width:800px)
+ {
+
+  .image6
+  {
+    position: absolute;
+    top: 2090px;
+    right: 0;
+    width:50%;
+    height: 300px;
+  }
+
+  .end
+  {
+    position: absolute;
+    top:2090px;
+    left:0px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .end i
+  {
+    position: absolute;
+    top:50px;
+    left:20px;
+    font-size: 35px;
+  }
+
+  .end h2
+  {
+    position: absolute;
+    top:50px;
+    left:100px;
+    font-size: 25px;
+  }
+
+  .end h4
+  {
+    position: absolute;
+    top:130px;
+    left:30px;
+    font-size: 25px;
+  }
+
+  .end h3
+  {
+    position: absolute;
+    top:95px;
+    left:40px;
+    font-size: 18px;
+  }
+
+  .end h5
+  {
+    position: absolute;
+    top:135px;
+    left:120px;
+    font-size: 18px;
+  }
+
+  .end input
+  {
+    border: none;
+    position: absolute;
+    top:170px;
+    left:230px;
+    font-size: 15px;
+    color: #fff;
+    font-family: Times;
+    background: #BD8B28;
+    padding:2.5px;
+    width: 110px;
+    height: 40px;
+    border:#BD8B28;
+
+  }
+
+  .end h6
+  {
+    position: absolute;
+    top:170px;
+    left:50px;
+    font-size: 20px;
+    font-family: Times;
+    color: rgb(123,123,123);
+  }
+
+  .end h1
+  {
+    position: absolute;
+    top:230px;
+    left:50px;
+    font-size: 16px;
+  }
+  .end p
+  {
+    position: absolute;
+    top:260px;
+    left:80px;
+    font-size: 15px;
+    font-family: Times;
+    color: rgb(123,123,123);
+  }
+}
+
+@media (max-width:660px)
+{
+  .nav4-link4-item
+  {
+  font-size: 12px;
+  position: absolute;
+  left: 13px;
+  top:180px;
+  margin:0;
+}
+
+.nav1-link-item{
+  margin:0;
+  font-size: 12px;
+}
+.navbar{
+  min-height: 50px;
+  background: white !important;
+}
+
+.navbar-nav {
+  height: 180px;
+}
+
+.navbar1-brand1{
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right:20px;
+}
+
+.image6
+{
+  position: absolute;
+  left: 0;
+  top:1550px;
+  width: 100%;
+  height: 350px;
+}
+.end
+{
+  width: 100%;
+  position: absolute;
+  top:1500px;
+  left:0px;
+  width: 50%;
+  text-align: center;
+}
+
+.end i
+{
+  position: absolute;
+  top:70px;
+  left:30px;
+  font-size: 45px;
+}
+
+.end h2
+{
+  width: 100%;
+  position: absolute;
+  top:80px;
+  left:110px;
+  font-size: 25px;
+  color:#fff;
+}
+
+.end h4
+{
+  position: absolute;
+  top:140px;
+  left:40px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.end h3
+{
+  width: 100%;
+  position: absolute;
+  top:120px;
+  left:100px;
+  font-size: 18px;
+  font-family: Times;
+  color: #fff;
+}
+
+.end h5
+{
+  position: absolute;
+  top:147px;
+  left:120px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.end input
+{
+  border: none;
+  position: absolute;
+  top:157px;
+  left:300px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.end h6
+{
+  position: absolute;
+  top:210px;
+  left:100px;
+  font-size: 20px;
+}
+
+.end h6 a
+{
+  color: #fff;
+}
+.end h1
+{
+  position: absolute;
+  top:250px;
+  left:80px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.end h1 a
+{
+    color: #fff;
+}
+.end p
+{
+  position: absolute;
+  top:280px;
+  left:80px;
+  font-size: 15px;
+  font-family: Times;
+  color: #fff;
+}
+}
+
+@media (max-width:558px)
+{
+  .end h4
+  {
+    position: absolute;
+    top:180px;
+    left:40px;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .end h3
+  {
+    width: 100%;
+    position: absolute;
+    top:120px;
+    left:580px;
+    font-size: 16px;
+    font-family: Times;
+    color: #fff;
+  }
+
+  .end h5
+  {
+    position: absolute;
+    top:185px;
+    left:120px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .end input
+  {
+    border: none;
+    position: absolute;
+    top:180px;
+    left:300px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .end h6
+  {
+    position: absolute;
+    top:230px;
+    left:100px;
+    font-size: 20px;
+  }
+
+  .end h6 a
+  {
+    color: #fff;
+  }
+  .end h1
+  {
+    position: absolute;
+    top:260px;
+    left:70px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .end h1 a
+  {
+      color: #fff;
+  }
+  .end p
+  {
+    width: 100%;
+    position: absolute;
+    top:290px;
+    left:50px;
+    font-size: 15px;
+    font-family: Times;
+    color: #fff;
+  }
+}
+@media (max-width:400px)
+{
+  .navbar1-brand1
+  {
+    font-size: 30px;
+    right: 0;
+  }
+
+  .end i
+  {
+    position: absolute;
+    top:70px;
+    left:30px;
+    font-size: 35px;
+  }
+
+  .end h2
+  {
+    width: 100%;
+    position: absolute;
+    top:80px;
+    left:110px;
+    font-size: 20px;
+    color:#fff;
+  }
+
+  .end h4
+  {
+    position: absolute;
+    top:150px;
+    left:40px;
+    font-size: 28px;
+    color: #fff;
+  }
+
+  .end h3
+  {
+    width: 200%;
+    position: absolute;
+    top:120px;
+    left:0px;
+    font-size: 15px;
+    font-family: Times;
+    color: #fff;
+  }
+
+  .end h5
+  {
+    position: absolute;
+    top:157px;
+    left:80px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .end input
+  {
+    border: none;
+    position: absolute;
+    top:147px;
+    left:200px;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .end h6
+  {
+    position: absolute;
+    top:210px;
+    left:80px;
+    font-size: 16px;
+  }
+
+  .end h6 a
+  {
+    color: #fff;
+  }
+  .end h1
+  {
+    position: absolute;
+    top:250px;
+    left:60px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .end h1 a
+  {
+      color: #fff;
+  }
+  .end p
+  {
+    width: 200%;
+    position: absolute;
+    top:280px;
+    left:10px;
+    font-size: 15px;
+    font-family: Times;
+    color: #fff;
+  }
+}
+
+@media (max-width:361px)
+{
+
+  .end i
+  {
+    position: absolute;
+    top:70px;
+    left:15px;
+    font-size: 35px;
+  }
+
+  .end h2
+  {
+    width: 200%;
+    position: absolute;
+    top:80px;
+    left:30px;
+    font-size: 20px;
+    color:#fff;
+  }
+
+  .end h4
+  {
+    position: absolute;
+    top:150px;
+    left:20px;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .end h3
+  {
+    width: 200%;
+    position: absolute;
+    top:120px;
+    left:20px;
+    font-size: 15px;
+    font-family: Times;
+    color: #fff;
+  }
+
+  .end h5
+  {
+    position: absolute;
+    top:157px;
+    left:80px;
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .end input
+  {
+    border: none;
+    position: absolute;
+    top:197px;
+    left:80px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .end h6
+  {
+    position: absolute;
+    top:250px;
+    left:80px;
+    font-size: 16px;
+  }
+
+  .end h6 a
+  {
+    color: #fff;
+  }
+  .end h1
+  {
+    position: absolute;
+    top:270px;
+    left:60px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .end h1 a
+  {
+      color: #fff;
+  }
+  .end p
+  {
+    position: absolute;
+    top:300px;
+    left:10px;
+    font-size: 15px;
+    font-family: Times;
+    color: #fff;
+  }
+}
+@media (hover:hover)
+{
+  .change
+  {
+    color: black;
+  }
+}

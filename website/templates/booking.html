@@ -1,0 +1,103 @@
+{% load static %}
+{% static "static/images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'stylesheet/style1.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/foothead.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'stylesheet/booking1.css' %}">
+    <title></title>
+  </head>
+  <body>
+    <nav class="navbar navbar1 navbar-expand-lg">
+        <a class="navbar-brand navbar1-brand1" href="#">The Maharaja Palace</a>
+        <button class="navbar-toggler button-toggler1 navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="fa fa-bars fabars "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link nav1-link-item " href="home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav1-link-item" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav1-link-item" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav4-link4-item" href="rooms">Book Now</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav1-link-item" href="#">Our Resort</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <form action="index" method="post">
+          {% csrf_token %}
+        <div class="dates">
+          <div class="dates-1">
+            <div class="dates-3">
+              <label></label>Check-in</label>
+              <input type="date" name="Check-in" value="Check-in" required>
+            </div>
+            <div class="dates-2">
+              <label>Check-out</label>
+              <input type="date" name="Check-out" placeholder="Check-out" required>
+            </div>
+            <div class="member">
+                <label>No. of Members</label>
+                <input type="text"  name="member"placeholder="No. of Members" required>
+            </div>
+            <div class="rooms-1">
+                <label>No. of Rooms</label>
+                <input type="text"  name="rooms"placeholder="No. of rooms" required>
+            </div>
+        </div>
+          </div>
+            {% if message %}
+                <h5>{{message}}</h5><br>
+            {% endif %}
+          {% for dest in dests %}
+            <div class="rooms">
+          <div class="selection">
+            <div class="price">
+                  <div class="images">
+                        <img src="{{dest.images.url}}" alt="">
+                  </div>
+                  <h4>{{dest.description}}</h4>
+                  <h3>Rs. {{dest.price}} per night</h3>
+                   <input type="radio" name="id" value={{dest.id}} required>
+            </div>
+          </div>
+          </div>
+             {% endfor %}
+             <div class="submit">
+               <input  type="Submit" value="Book Now">
+             </div>
+             </form>
+      <div class="details">
+          <div class="container-6 ">
+              <img src="../static/images/Monkey_Hut_Delivery-horz.jpg" class="image6 footer" alt="">
+          </div>
+          <div class="end footer1">
+            <i class="fa fa-bed" aria-hidden="true"></i>
+            <h2>The Maharaja Place</h2>
+            <h3>Address xxxxxxxxxxxxxxxxxxxxxxx</h3>
+            <h4>tel.</h4>
+            <h5>123456789</h5>
+            <a href="contact"><input type="button" name="" value="Contact"></a>
+            <h6><a href="#">xyz123@gmail.com</a></h6>
+            <h1><a href="#">SiteMaps</a></h1>
+            <p>© The Maharaja Place All Rights Reserved.</p>
+          </div>
+      </div>
+  </body>
+</html>

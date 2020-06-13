@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  font-family: Times;
+}
+
+form
+{
+  position: absolute;
+  top: 300px;
+  left:150px;
+  width: 800px;
+  height: 1200px;
+}
+
+.part1 , .part2, .policies
+{
+  background: rgba(123,123,123,0.5);
+}
+.your-info
+{
+  padding: 50px;
+  height: 300px;
+  border-bottom: 1px solid rgba(123,123,123,0.3);
+}
+
+.contact-info
+{
+  padding: 50px;
+  height: 380px;
+  border-bottom: 1px solid rgba(123,123,123,0.3);
+
+}
+
+.payment
+{
+  padding: 50px;
+  height: 300px;
+  border-bottom: 1px solid rgba(123,123,123,0.3);
+
+}
+.booking
+{
+  position: relative;
+  top:10px;
+  display:inline-flex;
+}
+
+.booking input,select,.booking3 input
+{
+  height: 60px;
+}
+
+select
+{
+  width:80px;
+}
+.booking1 input
+{
+  width:300px;
+}
+
+.booking2,.booking8
+{
+  position: relative;
+  left: 20px;
+
+}
+
+.booking2 input
+{
+  width: 300px;
+}
+.booking-1 input
+{
+  position: relative;
+  top:30px;
+}
+
+.booking3 input
+{
+  width: 380px;
+}
+
+.booking4
+{
+  position: relative;
+  top:30px;
+}
+
+.booking5
+{
+  position: relative;
+  top:50px;
+}
+
+.booking6
+{
+  position: relative;
+  top:10px;
+}
+
+.booking7 input
+{
+  width: 180px;
+}
+
+.booking h3
+{
+  position: relative;
+  left:30px;
+  top:15px;
+  font-size: 23px;
+}
+
+.policies
+{
+  position: relative;
+  top: 10px;
+  padding: 30px;
+}
+
+.check
+{
+  position: relative;
+  left: 100px;
+}
+
+.policies .booking p
+{
+  position:relative;
+  left:10px;
+}
+
+.check1
+{
+  position: relative;
+  left:130px;
+}
+
+.button1
+{
+  position: relative;
+  top:50px;
+  left:400px;
+  width: 400px;
+  height: 60px;
+  font-size:20px;
+  background: transparent;
+  border:none;
+  background: rgba(1,126,107,0.7);
+}
+
+.button1:hover
+{
+
+  background-color:  #b08f26;
+}
+
+.billdesk
+{
+  position: absolute;
+  top:200px;
+  right:120px;
+  width: 350px;
+}
+
+.check-in-out-policies
+{
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 350px;
+  background: rgba(123,123,123,0.5);
+}
+
+.check-in-out-policies h2
+{
+  font-size: 30px;
+}
+
+.check-in-out-policies-1
+{
+  display: inline-flex;
+  margin-top: 10px;
+}
+ .check-in
+{
+  width: 150px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.check-in-1
+{
+  margin-left: 50px;
+}
+
+.price h3 , .check-in-out-policies-1 .check-in h4
+{
+  font-size: 18px;
+}
+
+.price
+{
+  width:120px;
+}
+
+.price-1
+{
+  margin-left: 20px;
+}
+.price-1 h4
+{
+  font-size: 17px;
+}
+
+.container-6 img
+{
+  position: absolute;
+  left:50%;
+  top:2050px;
+}
+
+ .footer1
+{
+  position: absolute;
+  top:2050px;
+}

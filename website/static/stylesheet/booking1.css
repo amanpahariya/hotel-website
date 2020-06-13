@@ -1,0 +1,94 @@
+.rooms
+{
+  margin-top: 80px;
+  margin-left:100px;
+  display: inline-flex;
+  width: 500px;
+  height: 350px;
+  background: rgba(123,123,123,0.2);
+}
+
+.dates
+{
+  margin-left: 100px;
+  background: rgba(123,123,123,0.2);
+  width:1160px;
+  height: 150px;
+}
+
+.dates-1
+{
+  display: inline-flex;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.dates-3 label
+{
+  margin-top: -20px;
+}
+.dates-3 , .dates-2 , .member , .rooms-1
+{
+  margin-top: 20px;
+  display: inline-grid;
+  width:300px;
+}
+
+.dates-3 input, .dates-2 input , .member input , .rooms-1 input
+{
+  width: 150px;
+  margin-top: 20px;
+}
+
+
+.selection
+{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.images img
+{
+  width: 300px;
+  height: 200px;
+}
+
+
+.price input[type=radio]
+{
+  position: relative;
+  top:-60px;
+  left:280px;
+  font-size: 100px;
+}
+
+.price h4
+{
+  font-size: 20px;
+}
+
+h5
+{
+    font-size: 30px;
+    position:absolute;
+    left:100px;
+    color: %fff;
+}
+
+
+.submit input
+{
+  margin-left: 100px;
+  margin-top: 50px;
+  background: transparent;
+  border: none;
+  background: rgba(1,126,107,0.7);
+  font-size: 20px;
+  width: 300px;
+  height: 60px;
+}
+
+.submit input:hover
+{
+  background: #b08f26;
+  color: #fff;
+}

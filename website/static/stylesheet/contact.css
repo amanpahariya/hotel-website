@@ -1,0 +1,207 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Times;
+}
+
+body
+{
+  background: #fff;
+}
+
+.header a
+{
+  position: absolute;
+  top:120px;
+  left:700px;
+  font-size: 100px;
+  color: rgba(123,123,123,0.5);
+}
+.header h3
+{
+  position: absolute;
+  top:250px;
+  left:630px;
+  color: rgba(123,123,123,0.5);
+}
+
+.header h2
+{
+  position: absolute;
+  top:300px;
+  left:700px;
+  text-align: center;
+  color: rgba(123,123,123,0.5);
+}
+
+.header
+{
+  width: 100%;
+  height: 320px;
+  border-bottom:1px dotted rgba(123,123,123,0.5);
+}
+
+.header1
+{
+  position: absolute;
+  top:400px;
+  width: 100%;
+  height: 600px;
+}
+
+.header1 h2
+{
+  position: absolute;
+  top:50px;
+  left:700px;
+  color:  #b08f26;
+}
+
+.header1 h3
+{
+  position: absolute;
+  top:145px;
+  left:650px;
+  color:rgb(123,123,123,0.8);
+}
+
+.header1 h5
+{
+  position: absolute;
+  top:125px;
+  left:700px;
+  color:rgb(123,123,123,0.8);
+}
+
+.header1 h4
+{
+  position: absolute;
+  top:150px;
+  left:700px;
+  color:rgb(123,123,123,0.8);
+}
+
+.header1 h6
+{
+  position: absolute;
+  top:200px;
+  left:700px;
+  color:rgb(123,123,123,0.8);
+}
+.header1 h4:hover
+{
+  border-bottom: 1px solid rgba(123,123,123, 0.5);
+}
+.contact
+{
+  position: absolute;
+  top: 748px;
+  left:200px;
+  right:200px;
+  border: 2px solid #b08f26;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 250px;
+  padding-bottom: 650px;
+}
+form .name
+{
+  position: absolute;
+  top:100px;
+}
+
+form .name input
+{
+  position: absolute;
+  top:0;
+  left:200px;
+  width: 400px;
+}
+
+form .email
+{
+  position: absolute;
+  top:250px;
+  width: 50%;
+}
+
+form .email input
+{
+  position: absolute;
+  top:0;
+  left:200px;
+  width: 400px;
+}
+
+form .email small
+{
+  position: absolute;
+  left:200px;
+}
+form .cell
+{
+  width: 50%;
+  position: absolute;
+  top:400px;
+}
+
+form .cell input
+{
+  position: absolute;
+  top:0px;
+  left:200px;
+  width: 400px;
+}
+
+
+form .info
+{
+  position: absolute;
+  top:550px;
+}
+
+form .info input
+{
+  position: absolute;
+  top:0px;
+  left:200px;
+  width: 400px;
+}
+
+form .tips
+{
+  position: absolute;
+  top: 650px;
+  left:300px;
+  text-align: center;
+  width: 50%;
+}
+form .tips p
+{
+  position: absolute;
+  left:0px;
+}
+
+form button
+{
+  position: absolute;
+  top: 800px;
+  left:450px;
+  width: 200px;
+  height: 50px;
+}
+
+.container-6 img
+{
+  position: absolute;
+  left:50%;
+  top:1650px;
+}
+ .footer1
+{
+  position: absolute;
+  top:1650px;
+}
