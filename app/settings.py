@@ -25,7 +25,7 @@ SECRET_KEY = 'cr1s&+53uoorj=owl)-d6@qs=jqv&xq^v_r!&4h*w6z&2r#y5_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['friends-world.herokuapp.com']
 
 
 # Application definition
